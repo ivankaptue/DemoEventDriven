@@ -20,7 +20,8 @@ public class PersonController {
     @GetMapping
     public void updatePerson() {
         var person = new Person();
-        person.setUsername("Doe");
+        person.setUsername("admin");
+//        person.setUsername("Doe");
         person.setName("Jean");
         personService.update(person);
     }
